@@ -18,8 +18,7 @@ then
   then 
      echo "This project already exists! Try a different project name."
   else
-    echo 
-    if echo "$*" | grep -qe "^[0-9]\b"
+    if ls | grep -qe "^[0-9]\b"
     then
       basePath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
       fno=$(ls | grep -Eo "[0-9]*" | sort -rn | head -n 1)
@@ -37,7 +36,7 @@ then
        cat "$basePath/comment_boilerplate/generic_js_comment">main.js
       fi
       echo "Made a project directory with name $fno $*."
-      atom $basePath
+      atom "$basePath"
     else   
       echo "There appears to be missing project files. Make a folder with the format number[SPACE]Project name to continue"
     fi
