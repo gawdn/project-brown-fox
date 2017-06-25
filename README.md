@@ -10,4 +10,5 @@ project no. | date | project code name | project description | time
 3 | 2017-06-24 |Ping | Pong | 41:27  
 4 | 2017-06-24 |Fairest of them all | Brightness mirror | 41:48  
 5 | 2017-06-24 |Snek | Snake | 39:56  
+6 | 2017-06-25 |Floppy square | Flappy bird | 01:20:20  
 
