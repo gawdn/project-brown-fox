@@ -2,7 +2,7 @@
 
 # colour constants
 IRed='\033[0;91m'
-Colour_Off='\033[0m' 
+Colour_Off='\033[0m'
 
 # header
 echo "Project Brown Fox"
@@ -12,20 +12,22 @@ echo "==================="
 echo
 # end header
 
+basePath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 if [[ -n "$*" ]]
 then
-  if ls | grep -qe ".*$*.*"
-  then 
+  if ls "$basePath" | grep -qe ".*$*.*"
+  then
      echo "This project already exists! Try a different project name."
   else
-    if ls | grep -qe "^[0-9]\b"
+    if ls "$basePath" | grep -qe "^[0-9]\b"
     then
-      basePath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-      fno=$(ls | grep -Eo "[0-9]*" | sort -rn | head -n 1)
+
+      fno=$(ls "$basePath" | grep -Eo "[0-9]*" | sort -rn | head -n 1)
       (( fno++ ))
-      mkdir "$fno $*"
-      cd "$fno $*"
-      
+      mkdir "$basePath/$fno $*"
+      cd "$basePath/$fno $*"
+
       if echo "$*" | grep -qe ".*NOC.*"
       then
        echo "This is a Nature of Code project. Applying the NOC license."
@@ -36,8 +38,7 @@ then
        cat "$basePath/comment_boilerplate/generic_js_comment">main.js
       fi
       echo "Made a project directory with name $fno $*."
-      atom "$basePath"
-    else   
+    else
       echo "There appears to be missing project files. Make a folder with the format number[SPACE]Project name to continue"
     fi
   fi
