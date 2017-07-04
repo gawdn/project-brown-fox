@@ -1,0 +1,136 @@
+📦 sockets 🔴
+📦 files 🔴
+
+🏁 🍇
+
+  🍦 cityName  🔷🔡😯 🔤Please enter a major location (city, country etc.) name:🔤
+  🍦 rfso 🍺🔷📄📜 🔤apikey🔤
+  🍦 keyLen 32
+  🍦 key 📓 rfso keyLen
+  🍦 castKey 🍺 🔡 🍺 key
+
+  🍦 reqString 🍪🔤GET /data/2.5/weather?units=metric&q=🔤 cityName 🔤&APPID=🔤 castKey 🔤 HTTP/1.1❌r❌nHost: api.openweathermap.org❌r❌n❌r❌n🔤🍪
+  👴😀 reqString
+  🍦 socket 🍺 🔷📞🆕 🔤api.openweathermap.org🔤 🔤80🔤
+  💬 socket 📇 reqString
+
+  🍦 data 🍺 👂 socket 100000
+  👴😀 🍺 🔡 data
+
+  🍦 crlf 🔤❌r❌n🔤
+  🍦 splitData 🔫 🍺 🔡 data crlf
+  🍦 dataLen 🐔 splitData
+
+ 😀crlf
+ 😀🔤==================🔤
+ 😀🔤emojiweather 2017 ☁️ by @gawdn 🎈🔤
+ 😀🔤==================🔤
+
+  🍮 count 0
+  🍮 jsonBody 🔤🔤
+  🔂 ele splitData 🍇
+    🍫 count
+    🍊 😛 count dataLen 🍇
+      🍮 jsonBody ele
+    🍉
+  🍉
+  👴😀 jsonBody
+  🍦 searchStr 🔤"main":🔤
+  🍦 endStr 🔤,🔤
+  🍦 index 🍺 🔍 jsonBody searchStr
+  🍦 arbitaryLen 40
+
+  🍦 firstIndex ➕ index 🐔 searchStr
+
+  🍦 endIndex 🍺 🔍 🔪 jsonBody firstIndex arbitaryLen endStr
+
+  🍦 snipped 🔪 jsonBody firstIndex endIndex
+
+  🍮 wEmoji 🔤⛔🔤
+
+  🍊 😛 snipped 🔤"Clouds"🔤 🍇
+    🍮 wEmoji 🔤☁️☁️☁️☁️🔤
+  🍉
+  🍋 😛 snipped 🔤"Rain"🔤 🍇
+    🍮 wEmoji 🔤🌧🔤
+  🍉
+  🍋 😛 snipped 🔤"Clear"🔤 🍇
+    🍮 wEmoji 🔤🔅🔤
+  🍉
+  🍋 😛 snipped 🔤"Snow"🔤 🍇
+    🍮 wEmoji 🔤❄️🔤
+  🍉
+  🍋 😛 snipped 🔤"Drizzle"🔤 🍇
+    🍮 wEmoji 🔤☔🔤
+  🍉
+  🍋 😛 snipped 🔤"Mist"🔤 🍇
+    🍮 wEmoji 🔤🌫🔤
+  🍉
+  🍋 😛 snipped 🔤"Thunderstorm"🔤 🍇
+    🍮 wEmoji 🔤⛈🔤
+  🍉
+  🍋 😛 snipped 🔤"Extreme"🔤 🍇
+    🍮 wEmoji 🔤🌪🔤
+  🍉
+
+  🍦 sS 🔤"temp":🔤
+  🍦 eS 🔤,🔤
+  🍦 i 🍺 🔍 jsonBody sS
+  🍦 al 40
+
+  🍦 fi ➕ i 🐔 sS
+
+  🍦 ei 🍺 🔍 🔪 jsonBody fi al eS
+
+  🍦 tempS 🔪 jsonBody fi ei
+
+  👴😀 tempS
+  🍦 temp 🍺 🚀 tempS
+
+  🍮 tempEmoji 🔤⛔🔤
+  🍊 ◀️ temp 0 🍇
+    🍮 tempEmoji 🔤☃❄️❄️🔤
+  🍉
+  🍋 ◀️ temp 10 🍇
+    🍮 tempEmoji 🔤⛄🔤
+  🍉
+  🍋 ◀️ temp 20 🍇
+    🍮 tempEmoji 🔤🆒🔤
+  🍉
+  🍋 ◀️ temp 30 🍇
+    🍮 tempEmoji 🔤😎🔤
+  🍉
+  🍋 ◀️ temp 40 🍇
+    🍮 tempEmoji 🔤🔥 🌵🔤
+  🍉
+  🍋 ◀️ temp 50 🍇
+    🍮 tempEmoji 🔤🔥 🔥 🔥🔤
+  🍉
+
+  🍦 sS1 🔤"name":🔤
+  🍦 eS1 🔤,🔤
+  🍦 i1 🍺 🔍 jsonBody sS1
+  🍦 al1 40
+
+  🍦 fi1 ➕ i1 🐔 sS1
+
+  🍦 ei1 🍺 🔍 🔪 jsonBody fi1 al1 eS1
+
+  🍦 cityActualName 🔪 jsonBody fi1 ei1
+
+
+  🍦 sS2 🔤"description":🔤
+  🍦 eS2 🔤,🔤
+  🍦 i2 🍺 🔍 jsonBody sS2
+  🍦 al2 40
+
+  🍦 fi2 ➕ i2 🐔 sS2
+
+  🍦 ei2 🍺 🔍 🔪 jsonBody fi2 al2 eS2
+
+  🍦 shortDesc 🔪 jsonBody fi2 ei2
+
+  😀 🍪 cityActualName 🔤 can be described in emoji form as 🔤 wEmoji 🔤 (🔤 shortDesc 🔤).🔤 🔤 The 🌡 is looking pretty 🔤 tempEmoji 🔤 (🔤 tempS 🔤°C).🔤🍪
+  😀 crlf
+  😀 🔤==================🔤
+🍉
