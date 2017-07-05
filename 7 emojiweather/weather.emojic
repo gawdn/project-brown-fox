@@ -130,7 +130,22 @@
 
   🍦 shortDesc 🔪 jsonBody fi2 ei2
 
-  😀 🍪 cityActualName 🔤 can be described in emoji form as 🔤 wEmoji 🔤 (🔤 shortDesc 🔤).🔤 🔤 The 🌡 is looking pretty 🔤 tempEmoji 🔤 (🔤 tempS 🔤°C).🔤🍪
+  🍮 country cityActualName
+
+  🍦 sS3 🔤"country":🔤
+  🍦 eS3 🔤,🔤
+  🍦 al3 40
+
+  🍊🍦 i3 🔍 jsonBody sS3 🍇
+    🍦 fi3 ➕ i3 🐔 sS3
+
+    🍦 ei3 🍺 🔍 🔪 jsonBody fi3 al3 eS3
+
+    🍮 country 🔪 jsonBody fi3 ei3
+  🍉
+
+  😀 🍪 cityActualName 🔤 in 🔤 country 🔤 can be described in emoji form as 🔤 wEmoji 🔤 (🔤 shortDesc 🔤).🔤 🔤 The 🌡 is looking pretty 🔤 tempEmoji 🔤 (🔤 tempS 🔤°C).🔤🍪
   😀 crlf
+  😀 🔤🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🔤
   😀 🔤==================🔤
 🍉
