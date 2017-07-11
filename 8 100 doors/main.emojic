@@ -1,0 +1,39 @@
+👴 2017-07-11
+👴
+👴 Project id: 8
+👴 Project code name: 100 doors
+👴 Project description: rosetta code #1 in emojicode
+👴
+👴 Author: @gawdn / Gordon Zhong
+👴
+👴 LICENSE:
+👴 This project is licensed under:
+👴 Public domain
+
+👴 Unoptimised solution
+
+🏁 🍇
+  🍦 doors 🔷 🍨🐚👌 🐸
+  🔂 i ⏩ 0 100 🍇
+    🐻 doors 👎
+  🍉
+
+  🔂 i ⏩ 0 100 🍇
+    🔂 j ⏩ 0 100 🍇
+      👴 emojicode has an issue with stepped ranges that use a variable step
+      👴 where the variable 'j' can exceed the stop value
+      🍊 😛 🚮 ➕ j 1 ➕ i 1 0 🍇
+        🐷 doors j ❎ 🍺🐽 doors j
+      🍉
+    🍉
+  🍉
+
+  🍮 i 1
+  🔂 door doors 🍇
+    🍊 door 🍇
+      😀 🔡 i 10
+    🍉
+    🍮 i ➕ i 1
+  🍉
+
+🍉

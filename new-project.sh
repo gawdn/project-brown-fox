@@ -38,6 +38,8 @@ then
        cat "$basePath/comment_boilerplate/generic_js_comment">main.js
       fi
       echo "Made a project directory with name $fno $*."
+      echo "$fno" > "$basePath/PROJECT_HEAD/index"
+      echo "$*" > "$basePath/PROJECT_HEAD/name"
     else
       echo "There appears to be missing project files. Make a folder with the format number[SPACE]Project name to continue"
     fi

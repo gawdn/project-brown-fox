@@ -12,3 +12,4 @@ project no. | date | project code name | project description | time
 5 | 2017-06-24 |Snek | Snake | 39:56  
 6 | 2017-06-25 |Floppy square | Flappy bird | 01:20:20  
 7 | 2017-07-04 |Emojiweather | EmojiCode weather display | 01:24:49  
+8 | 2017-07-11 |100 doors | rosetta code | 01:10:03
