@@ -23,8 +23,9 @@ then
     if ls "$basePath" | grep -qe "^[0-9]\b"
     then
 
-      fno=$(ls "$basePath" | grep -Eo "[0-9]*" | sort -rn | head -n 1)
+      fno=$(ls "$basePath" | grep -Eo "^[0-9]*" | sort -rn | head -n 1)
       (( fno++ ))
+      echo "file index: $fno"
       mkdir "$basePath/$fno $*"
       cd "$basePath/$fno $*"
 
